@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* * {
+      @apply m-0 p-0 ;
+    } */
+  body {
+    @apply w-full;
+  }
+
+  #root {
+    @apply w-full h-svh flex justify-center;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
